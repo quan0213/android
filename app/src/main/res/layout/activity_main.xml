@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/login">
+
+
+    <EditText
+        android:padding="8dp"
+        android:textSize="20dp"
+        android:background="#ffff"
+        android:id="@+id/editsodienthoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="276dp"
+        android:layout_marginRight="48dp"
+        android:hint="Số điện thoại" />
+    <EditText
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textSize="20dp"
+        android:background="#ffff"
+        android:id="@+id/editpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="48dp"
+        android:hint="Mật khẩu" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:id="@+id/buttondangnhap"
+            android:textSize="15pt"
+            android:text="Đăng Nhập"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:textColor="#ff2a6b"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/buttondangky"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký tài khoản mới" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

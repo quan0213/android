@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:layout_height="400dp"
+    android:background="#ffd6d6"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG KÝ"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#ff2a6b"
+        />
+    <EditText
+        android:padding="8dp"
+        android:textSize="20dp"
+        android:background="#ffff"
+        android:id="@+id/edtsdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="48dp"
+        android:hint="Nhập số điện thoại" />
+    <EditText
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textSize="20dp"
+        android:background="#ffff"
+        android:id="@+id/edtpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="48dp"
+        android:hint="Nhập mật khẩu" />
+    <EditText
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textSize="20dp"
+        android:background="#ffff"
+        android:id="@+id/acpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="48dp"
+        android:hint="Xác nhận mật khẩu" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="#ff2a6b"
+            android:id="@+id/buttonxacnhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xác nhận"
+            android:padding="4dp"
+            android:paddingHorizontal="5dp"
+            android:textSize="15pt" />
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
