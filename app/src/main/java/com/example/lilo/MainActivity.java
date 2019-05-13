@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             this.context=c;
             this.rTitlefood=titlefood;
             this.rSubtitlefood=subtitlefood;
-            this.rimagesfood=imgsfood;
+            this.rImgsfood=imgsfood;
         }
 
         @NonNull
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             TextView myTitlefood = row.findViewById(R.id.textView1food);
             TextView mySubtitlefood = row.findViewById(R.id.textView2food);
 
-            imagesfood.setImageResource(rimagesfood[position]);
+            imagesfood.setImageResource(rImgsfood[position]);
             myTitlefood.setText(rTitlefood[position]);
             mySubtitlefood.setText(rSubtitlefood[position]);
             return row;
