@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         ControlButton();
         listViewfood=findViewById(R.id.listViewfood);
         MyAdapter adapter = new MyAdapter(this, mTitlefood,mSubtitlefood,imagesfood);
-        ////listViewfood.setAdapter(adapter);
+        /////listViewfood.setAdapter(adapter);
     }
     class MyAdapter extends ArrayAdapter<String>{
         Context context;
