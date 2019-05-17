@@ -143,8 +143,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 BackgroundTask b = new BackgroundTask();
                 String op = "2";
-                String length = "1234";
-                b.execute(op, length, edtsodienthoai.toString(), edtpassword.toString());
+                b.execute(op, edtsodienthoai.toString(), edtpassword.toString());
             }
         });
     }
@@ -173,21 +172,19 @@ public class MainActivity extends AppCompatActivity {
 
                 byte b = (byte) (op & 0xff);
 
-                long length = Long.parseLong(params[1]);
-                byte[] bytearlength = LongToLittleEndian(length);
-
                 byte[] endString = new byte[1];
                 endString[0] = 0x00;
 
                 switch (op) {
                     case 1:
 
-
-                        byte[] username1 = params[2].getBytes();
-                        byte[] pass1 = params[3].getBytes();
+                        byte[] username1 = params[1].getBytes();
+                        byte[] pass1 = params[2].getBytes();
+                        long length1 = username1.length + pass1.length;
+                        byte[] bytearlength1 = LongToLittleEndian(length1);
 
                         dos.write(b);
-                        dos.write(bytearlength);
+                        dos.write(bytearlength1);
                         dos.write(username1);
                         dos.write(endString);
                         dos.write(pass1, 0, 64);
@@ -216,11 +213,14 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
 
 
-                        byte[] username2 = params[2].getBytes();
-                        byte[] pass2 = params[3].getBytes();
+                        byte[] username2 = params[1].getBytes();
+                        byte[] pass2 = params[2].getBytes();
+
+                        long length2 = username2.length + pass2.length;
+                        byte[] bytearlength2 = LongToLittleEndian(length2);
 
                         dos.write(b);
-                        dos.write(bytearlength);
+                        dos.write(bytearlength2);
                         dos.write(username2);
                         dos.write(endString);
                         dos.write(pass2, 0, 64);
